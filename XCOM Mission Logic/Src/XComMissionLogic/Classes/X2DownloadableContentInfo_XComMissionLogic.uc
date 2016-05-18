@@ -1,5 +1,5 @@
 //---------------------------------------------------------------------------------------
-//  FILE:   XComDownloadableContentInfo_MissionLogic.uc                                    
+//  FILE:   X2DownloadableContentInfo_XComMissionLogic.uc                                    
 //           
 //	Use the X2DownloadableContentInfo class to specify unique mod behavior when the 
 //  player creates a new campaign or loads a saved game.
@@ -12,7 +12,7 @@ class X2DownloadableContentInfo_XComMissionLogic extends X2DownloadableContentIn
 
 static event OnPostTemplatesCreated()
 {
-
+	`log("XComMissionLogic :: Present and Correct");
 }
 
 static event OnLoadedSavedGame()

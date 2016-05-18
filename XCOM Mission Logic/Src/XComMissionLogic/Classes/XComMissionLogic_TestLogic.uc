@@ -1,5 +1,3 @@
-// This is an Unreal Script
-
 class XComMissionLogic_TestLogic extends XComGameState_MissionLogic;
 
 delegate EventListenerReturn OnEventDelegate(Object EventData, Object EventSource, XComGameState GameState, Name EventID);

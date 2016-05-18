@@ -1,13 +1,5 @@
-//---------------------------------------------------------------------------------------
-//  FILE:    X2MissionLogic.uc
-//  AUTHOR:  James Rakich
-//  PURPOSE: Interface for adding new mission logicto X-Com 2. Extend this class and then
-//           implement CreateTemplates to produce one or more mission logic templates.
-//           
-//---------------------------------------------------------------------------------------
-
-
 class XComGameState_MissionLogic extends XComGameState_BaseObject
+	implements(XComGameState_MissionLogic_API)
 	dependson(X2TacticalGameRulesetDataStructures);
 
 const UNIT_REMOVED_EVENTPRIORITY = 44; // Lowered priority below that of the Andromedon SwitchToRobot ability trigger (45).
